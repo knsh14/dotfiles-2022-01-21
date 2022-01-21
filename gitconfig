@@ -1,0 +1,35 @@
+[alias]
+    discard = checkout --
+    unstage = reset HEAD
+    st = status
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = auto
+[include]
+    path = ~/.gitconfig.local
+[core]
+    editor = nvim
+[pager]
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
+[diff]
+    context = 10
+    indentHeuristic = true
+[push]
+    default = upstream
+[user]
+	name = knsh14
+	email = "company email"
+	useConfigOnly = true
+	signingkey = XXXXXXXXXXXXXXXX
+[grep]
+    lineNumber = true
+[branch]
+    sort = -authordate
+[core]
+    attributesfile = /Users/knsh14/gitattributes
+[commit]
+    gpgsign = true
